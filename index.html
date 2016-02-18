@@ -19,6 +19,9 @@
     <link href="css/scrolling-nav.css" rel="stylesheet">
     <link href='https://fonts.googleapis.com/css?family=Raleway|Lato|Montserrat' rel='stylesheet' type='text/css'>
     <link href='https://fonts.googleapis.com/css?family=Libre+Baskerville:400,400italic' rel='stylesheet' type='text/css'>
+    <link href="http://fonts.googleapis.com/css?family=Varela+Round" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" type="text/css" href="css/cubeportfolio.min.css">
+
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!--[if lt IE 9]>
         <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
@@ -39,7 +42,7 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a class="navbar-brand page-scroll" href="#page-top">GIZEMIST</a>
+                <a class="navbar-brand page-scroll" href="#page-top"><img class="brand hidden" src="imgs/gizemist-logo.png" style="max-width:150px; margin-top: -18px;" alt="Gizemist logo"></a>
             </div>
 
             <!-- Collect the nav links, forms, and other content for toggling -->
@@ -73,6 +76,7 @@
         </div>
         <!-- /.container -->
     </nav>
+
    <!-- Carousel
     ================================================== -->
     <div id="myCarousel" class="carousel slide" data-ride="carousel">
@@ -87,8 +91,7 @@
           <div id="csl-item1" class="carousel-image">&nbsp;</div>
               <div class="container">
                 <div class="carousel-caption">
-                  <!-- <img class="logo" src="gizemist-logo.png"> -->
-                  <h1>Hey, I'm Gizem</h1>
+                  <img class="logo" src="imgs/gizemist-logo.png">
                   <p>I am a web design and development unicorn.</p>
                   <!-- <p><a class="btn btn-lg btn-crsl" href="#" role="button">Sign up today</a></p> -->
                     <a class="btn btn-lg btn-crsl page-scroll" href="#about">Learn More</a>
@@ -96,15 +99,23 @@
            </div>
         </div>
        </div>
+      <!-- <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+        <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+        <span class="sr-only">Previous</span>
+      </a>
+      <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+        <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+        <span class="sr-only">Next</span>
+      </a> -->       
     </div><!-- /.carousel -->
     <!-- Intro Section -->
     <section id="about" class="about-section">
         <div class="container">
             <div class="row">
                 <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
-                    <h1>Let's break the ice</h1>
+                    <h1 class="arrow">Let's break the ice</h1>
                     <p class="pb60">I am a life-long learner, passionate about the interwebs. Currently studying full-stack web development and working as a web designer in Austin for the most discerning name in travel. Previously, a graphic designer in New York for the most trusted name in trend.</p>
-                    <a class="page-scroll" href="#project"><i class="fa fa-heart pink">x</i></a>
+                    <a class="page-scroll" href="#project"><i class="glyphicon glyphicon-menu-down"></i></a>
                 </div>
             </div>
         </div>
@@ -113,61 +124,115 @@
     <!-- Project Section -->
     <section id="project" class="project-section">
         <div class="container">
-            <div class="row">
-                <div class="col-lg-12">
-                    <h1>Project Section</h1>
+            <div class="clearfix">
+                <div id="js-filters-lightbox-gallery2" class="cbp-l-filters-button cbp-l-filters-left">
+                    <div data-filter="*" class="cbp-filter-item-active cbp-filter-item">All</div>
+                    <div data-filter=".graphic" class="cbp-filter-item">Graphic</div>
+                    <div data-filter=".logos" class="cbp-filter-item">Logo</div>
+                    <div data-filter=".motion" class="cbp-filter-item">Motion</div>
                 </div>
-                <div class="filter" data-filter="all"><button class="btn btn-new"> Show All</button></div>
-                <div class="filter" data-filter=".category-1"><button class="btn btn-new"> Category 1</button></div>
-                <div class="filter" data-filter=".category-2"><button class="btn btn-new"> Category 2</button></div>
-                <div class="filter" data-filter=".category-3"><button class="btn btn-new"> Category 3</button></div>
-                <div class="filter" data-filter=".category-4"><button class="btn btn-new"> Category 4</button></div>
+            </div>
+
+            <div id="js-grid-lightbox-gallery" class="cbp">
+                <div class="cbp-item web-design graphic print motion">
+                    <a href="ajax-lightbox-gallery/project1.html" class="cbp-caption cbp-singlePageInline" data-title="World Clock Widget<br>by Paul Flavius Nechita" rel="nofollow">
+                        <div class="cbp-caption-defaultWrap">
+                            <img src="http://scriptpie.com/cubeportfolio/img/?i=380x285/b385a1" alt="">
+                        </div>
+                        <div class="cbp-caption-activeWrap">
+                            <div class="cbp-l-caption-alignLeft">
+                                <div class="cbp-l-caption-body">
+                                    <div class="cbp-l-caption-title">World Clock Widget</div>
+                                    <div class="cbp-l-caption-desc">by Paul Flavius Nechita</div>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="cbp-item web-design logos identity graphic">
+                    <a href="ajax-lightbox-gallery/project2.html" class="cbp-caption cbp-singlePageInline" data-title="Bolt UI<br>by Tiberiu Neamu" rel="nofollow">
+                        <div class="cbp-caption-defaultWrap">
+                            <img src="http://scriptpie.com/cubeportfolio/img/?i=380x285/af2769" alt="">
+                        </div>
+                        <div class="cbp-caption-activeWrap">
+                            <div class="cbp-l-caption-alignLeft">
+                                <div class="cbp-l-caption-body">
+                                    <div class="cbp-l-caption-title">Bolt UI</div>
+                                    <div class="cbp-l-caption-desc">by Tiberiu Neamu</div>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="cbp-item graphic print identity">
+                    <a href="ajax-lightbox-gallery/project3.html" class="cbp-caption cbp-singlePageInline" data-title="WhereTO App<br>by Tiberiu Neamu" rel="nofollow">
+                        <div class="cbp-caption-defaultWrap">
+                            <img src="http://scriptpie.com/cubeportfolio/img/?i=380x285/abc930" alt="">
+                        </div>
+                        <div class="cbp-caption-activeWrap">
+                            <div class="cbp-l-caption-alignLeft">
+                                <div class="cbp-l-caption-body">
+                                    <div class="cbp-l-caption-title">WhereTO App</div>
+                                    <div class="cbp-l-caption-desc">by Tiberiu Neamu</div>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="cbp-item graphic print identity">
+                    <a href="ajax-lightbox-gallery/project4.html" class="cbp-caption cbp-singlePageInline" data-title="WhereTO App<br>by Tiberiu Neamu" rel="nofollow">
+                        <div class="cbp-caption-defaultWrap">
+                            <img src="http://scriptpie.com/cubeportfolio/img/?i=380x285/abc930" alt="">
+                        </div>
+                        <div class="cbp-caption-activeWrap">
+                            <div class="cbp-l-caption-alignLeft">
+                                <div class="cbp-l-caption-body">
+                                    <div class="cbp-l-caption-title">WhereTO App</div>
+                                    <div class="cbp-l-caption-desc">by Tiberiu Neamu</div>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>                
+                <div class="cbp-item graphic print identity">
+                    <a href="ajax-lightbox-gallery/project5.html" class="cbp-caption cbp-singlePageInline" data-title="WhereTO App<br>by Tiberiu Neamu" rel="nofollow">
+                        <div class="cbp-caption-defaultWrap">
+                            <img src="http://scriptpie.com/cubeportfolio/img/?i=380x285/abc930" alt="">
+                        </div>
+                        <div class="cbp-caption-activeWrap">
+                            <div class="cbp-l-caption-alignLeft">
+                                <div class="cbp-l-caption-body">
+                                    <div class="cbp-l-caption-title">WhereTO App</div>
+                                    <div class="cbp-l-caption-desc">by Tiberiu Neamu</div>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div> 
+                <div class="cbp-item graphic print identity">
+                    <a href="ajax-lightbox-gallery/project6.html" class="cbp-caption cbp-singlePageInline" data-title="WhereTO App<br>by Tiberiu Neamu" rel="nofollow">
+                        <div class="cbp-caption-defaultWrap">
+                            <img src="http://scriptpie.com/cubeportfolio/img/?i=380x285/af2769" alt="">
+                        </div>
+                        <div class="cbp-caption-activeWrap">
+                            <div class="cbp-l-caption-alignLeft">
+                                <div class="cbp-l-caption-body">
+                                    <div class="cbp-l-caption-title">WhereTO App</div>
+                                    <div class="cbp-l-caption-desc">by Tiberiu Neamu</div>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div> 
+             </div>
+            <div id="js-loadMore-lightbox-gallery" class="cbp-l-loadMore-button">
+                <a href="ajax-lightbox-gallery/loadMore.html" class="cbp-l-loadMore-link" rel="nofollow">
+                    <span class="cbp-l-loadMore-defaultText">LOAD MORE</span>
+                    <span class="cbp-l-loadMore-loadingText">LOADING...</span>
+                    <span class="cbp-l-loadMore-noMoreLoading">NO MORE WORKS</span>
+                </a>
             </div>
         </div>
-        <div id="Container" class="container-fluid">
-            <div class="row">
-                <div class="sortable">
-                <div class="mix category-4 col-sm-4 col-xs-12 clear-L-R" data-myorder="1">  <img class="img-responsive" src="https://unsplash.it/800/600?image=457" alt="Generic placeholder image">
-                        <div class="col-xs-12 caption caption-text">
-                            <h3>Amazing Caption</h3>
-                            <p><a href="#">View </a><i class="fa fa-chevron-circle-right"></i></p>
-                        </div>
-                </div>
-                <div class="mix category-2 col-sm-4 col-xs-12 clear-L-R" data-myorder="2">  <img class="img-responsive" src="https://unsplash.it/800/600?image=457" alt="Generic placeholder image">
-                        <div class="col-xs-12 caption caption-text">
-                            <h3>Amazing Caption</h3>
-                            <p><a href="#">View </a><i class="fa fa-chevron-circle-right"></i></p>
-                        </div>
-                </div>
-                <div class="mix category-3 col-sm-4 col-xs-12 clear-L-R" data-myorder="3">  <img class="img-responsive" src="https://unsplash.it/800/600?image=457" alt="Generic placeholder image">
-                        <div class="col-xs-12 caption caption-text">
-                            <h3>Amazing Caption</h3>
-                            <p><a href="#">View </a><i class="fa fa-chevron-circle-right"></i></p>
-                        </div>
-                </div>
-                <div class="mix category-1 col-sm-4 col-xs-12 clear-L-R" data-myorder="7"> <img class="img-responsive" src="https://unsplash.it/800/600?image=457" alt="Generic placeholder image">
-                        <div class="col-xs-12 caption caption-text">
-                            <h3>Amazing Caption</h3>
-                            <p><a href="#">View </a><i class="fa fa-chevron-circle-right"></i></p>
-                        </div>
-                </div>
-            
-            
-                <div class="mix category-2 col-sm-4 col-xs-12 clear-L-R" data-myorder="4"> <img class="img-responsive" src="https://unsplash.it/800/600?image=457" alt="Generic placeholder image">
-                        <div class="col-xs-12 caption caption-text">
-                            <h3>Amazing Caption</h3>
-                            <p><a href="#">View </a><i class="fa fa-chevron-circle-right"></i></p>
-                        </div>
-                </div>
-                <div class="mix category-1 col-sm-4 col-xs-12 clear-L-R" data-myorder="5"> <img class="img-responsive" src="https://unsplash.it/800/600?image=457" alt="Generic placeholder image">
-                        <div class="col-xs-12 caption caption-text">
-                            <h3>Amazing Caption</h3>
-                            <p><a href="#">View </a><i class="fa fa-chevron-circle-right"></i></p>
-                        </div>
-                </div>
-            </div>  
-            </div>          
-        </div>        
     </section>
 
     <!-- Services Section -->
@@ -175,7 +240,7 @@
         <div class="container">
               <div class="row">
                 <div class="col-lg-12">
-                    <h1>Services Section</h1>
+                    <h1 class="arrow">Services Section</h1>
                 </div>
                 <div class="col-lg-4 col-sm-4">
                   <img class="img-circle" src="data:image/gif;base64,R0lGODlhAQABAIAAAHd3dwAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" alt="Generic placeholder image" width="140" height="140">
@@ -198,26 +263,22 @@
               </div><!-- /.row -->
             </div>
         </div>
-
     </section>
-
-    <!-- Testimonials Section -->
-    <!-- <section id="testimonial" class="testimonial-section">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12">
-                    <h1>Testimonials </h1>
-                </div>
-            </div>
-        </div>        
-    </section> -->
-
+    <section class="subscribe text-center">
+      <div class="container">
+        <h1><i class="fa fa-paper-plane"></i><span>Subscribe to stay in the loop</span></h1>
+        <form action="#">
+          <input type="text" name="" value="" placeholder="" required>
+          <input type="submit" name="" value="Send">
+        </form>
+      </div>
+    </section>
     <!-- Contact Section -->
     <section id="contact" class="contact-section">
         <div class="container">
             <div class="row">
                 <div class="col-lg-12">
-                    <h1>Want to say hi?</h1>
+                    <h1 class="arrow">Want to say hi?</h1>
                 </div>
             </div>
         </div>
@@ -241,24 +302,26 @@
                         </div>
                         <div class="form-group">
                         <textarea class="form-control" type="textarea" id="message" placeholder="Message" maxlength="140" rows="7"></textarea>
-                            <span class="help-block"><p id="characterLeft" class="help-block ">You have reached the limit</p></span>
                         </div>
                     <button type="button" id="submit" name="submit" class="btn btn-new pull-right">Submit Form</button>
                     </form>
                 </div>
             </div>
-        </div>    
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12">
-                    <h3>You can also find me</h3>
-                    <
-                </div>
-            </div>
-        </div>            
+        </div>          
     </section>
-
-
+</body>
+<footer>
+    <div class="container social">
+        <div class="pull-left ">
+            <h6>Coded with <i class="fa fa-heart pink"></i> by Gizem | © Gizemist.com 2016</h6>
+        </div> 
+        <div class="pull-right">
+            <li><a href=""><i class="fa fa-github"> </i> Github</a></li>
+            <li><a href=""><i class="fa fa-twitter"> </i> Twitter</a></li>
+            <li><a href=""><i class="fa fa-google-plus"> </i> Google+</a></li>
+        </div>             
+    </div>
+</footer>
     <!-- jQuery -->
     <script src="js/jquery.js"></script>
 
@@ -274,13 +337,10 @@
           $('#Container').mixItUp();
         });
     </script>
-</body>
-<footer>
-    <div class="container">
-        <div class="col-md-10 col-md-offset-1 text-center">
-            
-            <h6>Coded with <i class="fa fa-heart pink"></i> by Gizem</h6>
-        </div>   
-    </div>
-</footer>
+
+    <!-- load cubeportfolio -->
+    <script type="text/javascript" src="js/jquery.cubeportfolio.min.js"></script>
+
+    <!-- init cubeportfolio -->
+    <script type="text/javascript" src="js/main.js"></script>
 </html>

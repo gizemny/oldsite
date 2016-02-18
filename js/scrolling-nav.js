@@ -17,3 +17,14 @@ $(function() {
         event.preventDefault();
     });
 });
+
+//jQuery for brand visibility on scroll
+$(document).scroll(function () {
+var y = $(document).scrollTop(),
+   image = $(".brand");
+if (y >= 100) {
+    image.removeClass('hidden');
+} else {
+    image.addClass('hidden');
+}
+});
