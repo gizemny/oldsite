@@ -13,9 +13,17 @@ html, button, input, select, textarea {
 }
 body { 
   margin: 0; 
-  font-family: 'Varela Round', sans-serif; 
+  font-family: 'Varela Round', sans-serif;
+  font-size: 1.6em; 
+  line-height: 1.6em;
+  width: 100%;
+  height: 100%;
 }
 
+a { color: #353535; -webkit-transition: all 0.5s; -moz-transition: all 0.5s; -o-transition: all 0.5s; transition: all 0.5s; }
+a:hover, a:focus { color: #3dc9b3; text-decoration: none; }
+p { color: #8c9398; word-spacing: 1px; line-height: 25px; font-size: 14px; }
+h2 { font-size: 15px; color: #353535; text-transform: uppercase; font-weight: bold; }
 h1.arrow { 
   font-size: 15px; 
   text-transform: uppercase; 
@@ -55,62 +63,45 @@ html {
 }
 
 .logo.img-responsive {
-  margin: 0 auto;
+  margin: 120px auto;
 }
 
-/* CAROUSEL
--------------------------------------------------- */
-
-/* Carousel base class */
-/*.carousel {
-  height: 500px;
-  margin-top: 50px;*/
-  /*margin-bottom: 60px;*/
+.pink{
+    color:pink;
 }
-/* Since positioning the image, we need to help out the caption */
-/*.carousel-caption {
-  z-index: 10;
-  padding-bottom:150px;*/
+.white {
+  color:#fff;
 }
-
-/* Declare heights because of positioning of img element */
-/*.carousel .item {
-  height: 500px;
-  background-color: #777;
-}
-
-.carousel-inner > .item > .carousel-image {
-    width: 100%;
-    height: 500px; 
-    text-align: center;
-    align: center;
-}
-
-#csl-item1 {
-    background:url(https://unsplash.it/1600/500?image=450); 
-    background-repeat: no-repeat;   
-    background-position: center top; 
-}
-
-#csl-item2 {
-    background:url(https://unsplash.it/1600/500?image=213); 
-    background-repeat: no-repeat;   
-    background-position: center top; 
-}
-
-#csl-item3 {
-    background:url(https://unsplash.it/1600/500?image=256); 
-    background-repeat: no-repeat;   
-    background-position: center top; 
-}
-*/
 
 /* Buttons
 -------------------------------------------------- */
 
-.btn-dark {
-
+.btn-light:active {
+  color: #fff;
+  background-color: #000;
 }
+
+.btn-light {
+  -webkit-transition: all 0.5s ease;
+  -moz-transition: all 0.5s ease;
+  -o-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+  color: #fff;
+  background-color: transparent;
+  border-color: #fff;
+}
+.btn-light:focus,
+.btn-light.focus {
+  color: #333;
+  background-color: #fff;
+  border-color: #8c8c8c;
+}
+.btn-light:hover {
+  color: #fff;
+  background-color: #000;
+  border-color: #8c8c8c;
+}
+
 .btn-dark:active {
   color: #fff;
   background-color: #000;
@@ -142,6 +133,9 @@ html {
 
 section h1 {
     padding-bottom: 40px;
+}
+section {
+  padding-bottom: 60px;
 }
 .intro-section {
     height: auto;
@@ -182,6 +176,7 @@ section h1 {
     background: #eee;
 }
 
+
 /* MIXITUP CONTENT
 -------------------------------------------------- */
 
@@ -199,6 +194,166 @@ section h1 {
     padding: 40px 2% 60px 2%;
     text-align: justify;
     overflow: hidden;
+}
+
+/* ==========================================================================
+Features
+========================================================================== */
+.features-wrapper, .team-wrapper { 
+  margin: 70px 0 0; 
+}
+.shadow { 
+  text-shadow: rgb(55, 181, 161) 1px 1px, rgb(55, 181, 161) 2px 2px, rgb(55, 181, 161) 3px 3px, rgb(55, 181, 161) 4px 4px, rgb(55, 181, 161) 5px 5px, rgb(55, 181, 161) 6px 6px, rgb(55, 181, 161) 7px 7px, rgb(55, 181, 161) 8px 8px, rgb(55, 181, 161) 9px 9px, rgb(55, 181, 161) 10px 10px, rgb(55, 181, 161) 11px 11px, rgb(55, 181, 161) 12px 12px, rgb(55, 182, 162) 13px 13px, rgb(55, 183, 163) 14px 14px, rgb(56, 184, 164) 15px 15px, rgb(56, 185, 165) 16px 16px, rgb(56, 186, 166) 17px 17px, rgb(57, 187, 167) 18px 18px, rgb(57, 188, 168) 19px 19px, rgb(57, 189, 169) 20px 20px, rgb(58, 191, 170) 21px 21px, rgb(58, 192, 171) 22px 22px, rgb(58, 193, 172) 23px 23px, rgb(59, 194, 173) 24px 24px, rgb(59, 195, 174) 25px 25px, rgb(59, 196, 175) 26px 26px, rgb(60, 197, 176) 27px 27px, rgb(60, 198, 177) 28px 28px, rgb(60, 199, 178) 29px 29px, rgb(61, 201, 179) 30px 30px; 
+}
+.icon { height: 125px; 
+  width: 125px; 
+  line-height: 125px; 
+  max-width: 100%; 
+  background: #3dc9b3; 
+  border-radius: 50%; 
+  -o-border-radius: 50%; 
+  -moz-border-radius: 50%; 
+  -webkit-border-radius: 50%; 
+  display: block; 
+  color: #fff; 
+  font-size: 55px; 
+  text-align: center; 
+  vertical-align: middle; 
+  position: relative; 
+  margin: 0 auto 50px; 
+}
+/* Portfolio
+-------------------------------------------------- */
+
+#portfolio .portfolio-item {
+  margin: 0 0 15px;
+  right: 0;
+}
+#portfolio .portfolio-item .portfolio-link {
+  display: block;
+  position: relative;
+  max-width: 400px;
+  margin: 0 auto;
+}
+#portfolio .portfolio-item .portfolio-link .portfolio-hover {
+  background: rgba(254, 209, 54, 0.9);
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  transition: all ease 0.5s;
+  -webkit-transition: all ease 0.5s;
+  -moz-transition: all ease 0.5s;
+}
+#portfolio .portfolio-item .portfolio-link .portfolio-hover:hover {
+  opacity: 1;
+}
+#portfolio .portfolio-item .portfolio-link .portfolio-hover .portfolio-hover-content {
+  position: absolute;
+  width: 100%;
+  height: 20px;
+  font-size: 20px;
+  text-align: center;
+  top: 50%;
+  margin-top: -12px;
+  color: white;
+}
+#portfolio .portfolio-item .portfolio-link .portfolio-hover .portfolio-hover-content i {
+  margin-top: -12px;
+}
+#portfolio .portfolio-item .portfolio-link .portfolio-hover .portfolio-hover-content h3,
+#portfolio .portfolio-item .portfolio-link .portfolio-hover .portfolio-hover-content h4 {
+  margin: 0;
+}
+#portfolio .portfolio-item .portfolio-caption {
+  max-width: 400px;
+  margin: 0 auto;
+  background-color: white;
+  text-align: center;
+  padding: 25px;
+}
+#portfolio .portfolio-item .portfolio-caption h4 {
+  text-transform: none;
+  margin: 0;
+}
+#portfolio .portfolio-item .portfolio-caption p {
+  font-family: "Droid Serif", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-style: italic;
+  font-size: 16px;
+  margin: 0;
+}
+#portfolio * {
+  z-index: 2;
+}
+
+.portfolio-modal .modal-content {
+  border-radius: 0;
+  background-clip: border-box;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+  border: none;
+  min-height: 100%;
+  padding: 100px 0;
+  text-align: center;
+}
+.portfolio-modal .modal-content h2 {
+  margin-bottom: 15px;
+  font-size: 3em;
+}
+.portfolio-modal .modal-content p {
+  margin-bottom: 30px;
+}
+.portfolio-modal .modal-content p.item-intro {
+  margin: 20px 0 30px;
+  font-family: "Droid Serif", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-style: italic;
+  font-size: 16px;
+}
+.portfolio-modal .modal-content ul.list-inline {
+  margin-bottom: 30px;
+  margin-top: 0;
+}
+.portfolio-modal .modal-content img {
+  margin-bottom: 30px;
+}
+.portfolio-modal .close-modal {
+  position: absolute;
+  width: 75px;
+  height: 75px;
+  background-color: transparent;
+  top: 25px;
+  right: 25px;
+  cursor: pointer;
+}
+.portfolio-modal .close-modal:hover {
+  opacity: 0.3;
+}
+.portfolio-modal .close-modal .lr {
+  height: 75px;
+  width: 1px;
+  margin-left: 35px;
+  background-color: #222222;
+  transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  /* IE 9 */
+  -webkit-transform: rotate(45deg);
+  /* Safari and Chrome */
+  z-index: 1051;
+}
+.portfolio-modal .close-modal .lr .rl {
+  height: 75px;
+  width: 1px;
+  background-color: #222222;
+  transform: rotate(90deg);
+  -ms-transform: rotate(90deg);
+  /* IE 9 */
+  -webkit-transform: rotate(90deg);
+  /* Safari and Chrome */
+  z-index: 1052;
+}
+.portfolio-modal .modal-backdrop {
+  opacity: 0;
+  display: none;
 }
 
 /* Img Hover
@@ -239,27 +394,6 @@ section h1 {
 }    
 
 
-/* Contact Form + Footer 
--------------------------------------------------- */
-
-.pink{
-    color:pink;
-}
-.white {
-  color:#fff;
-}
-.social a {
-  padding: 10px;
-  font-size: 22px;
-}
-
-.social > a,
-.social  .active > a:hover,
-.social  .active > a:focus {
-  color: #555;
-  
-}
-
 /* Subscribe
 -------------------------------------------------- */
 
@@ -283,7 +417,7 @@ section h1 {
   margin-top: 20px; 
   letter-spacing: 1px; 
 }
-.subscribe input[type=text] { 
+.subscribe input[type=email] { 
   background-color: rgba(255, 255, 255, 0.1); 
   border: solid 1px #fff; 
   padding: 20px; 
@@ -310,6 +444,35 @@ section h1 {
 
 /* Contact 
 -------------------------------------------------- */
+
+section#contact .container {
+  padding-bottom: 30px;
+}
+
+section#contact .container > .row {
+  padding-left: 10%;
+  padding-right: 10%;
+}
+
+section#contact .glyphicon {
+  color: #1abc9c;
+  padding-right: 8px;
+}
+
+#form-feedback {
+  color: #1abc9c;
+  opacity: 0;
+  margin: 5px;
+  margin-right: 80px;
+  -webkit-transition: all .5s ease-out;
+  -moz-transition: all .5s ease-out;
+  -o-transition: all .5s ease-out;
+  transition: all .5s ease-out;
+}
+
+/* Social 
+-------------------------------------------------- */
+
 ul.social-buttons { 
   list-style: none; 
   margin: 0; 
@@ -345,30 +508,54 @@ ul.social-buttons li:last-child {
   margin-top: 25px 
 }
 
-section#contact .container {
-  padding-bottom: 30px;
+/* Footer 
+-------------------------------------------------- */
+
+footer a { 
+  color: #a1a9b0; 
+}
+footer { 
+  background-color: #242830; 
+  padding: 40px 0 30px; 
 }
 
-section#contact .container > .row {
-  padding-left: 10%;
-  padding-right: 10%;
+footer h6 { 
+  list-style: none; 
+  color: #fff; 
+  line-height: 25px; 
 }
 
-section#contact .glyphicon {
-  color: #1abc9c;
-  padding-right: 8px;
+.credit {
+  text-align: right; 
 }
 
-#form-feedback {
-  color: #1abc9c;
-  opacity: 0;
-  margin: 5px;
-  margin-right: 80px;
-  -webkit-transition: all .5s ease-out;
-  -moz-transition: all .5s ease-out;
-  -o-transition: all .5s ease-out;
-  transition: all .5s ease-out;
+/* RESPONSIVE CSS
+-------------------------------------------------- */
+
+@media (min-width: 768px) {
+    .navbar {
+        padding: 10px 0;
+        -webkit-transition: background .5s ease-in-out,padding .5s ease-in-out;
+        -moz-transition: background .5s ease-in-out,padding .5s ease-in-out;
+        transition: background .5s ease-in-out,padding .5s ease-in-out;
+    }
+
+    .navbar-nav{
+        margin: 0 auto;
+        display: table;
+        table-layout: fixed;
+        float:none;
+    }
+
+    .top-nav-collapse {
+        padding: 0;
+    }
 }
+
+@media (min-width: 992px) {
+
+}
+
 
 /* Margin + Padding Classes
 -------------------------------------------------- */
@@ -667,44 +854,4 @@ section#contact .glyphicon {
   padding-left: 6rem;
 }
 
-
-/* RESPONSIVE CSS
--------------------------------------------------- */
-
-@media (min-width: 768px) {
-    .navbar {
-        padding: 10px 0;
-        -webkit-transition: background .5s ease-in-out,padding .5s ease-in-out;
-        -moz-transition: background .5s ease-in-out,padding .5s ease-in-out;
-        transition: background .5s ease-in-out,padding .5s ease-in-out;
-    }
-
-    .navbar-nav{
-        margin: 0 auto;
-        display: table;
-        table-layout: fixed;
-        float:none;
-    }
-
-    .top-nav-collapse {
-        padding: 0;
-    }
-
-  /* Bump up size of carousel content */
-  .carousel-caption p {
-    margin-bottom: 20px;
-    font-size: 21px;
-    line-height: 1.4;
-  }
-
-  .featurette-heading {
-    font-size: 50px;
-  }
-}
-
-@media (min-width: 992px) {
-  .featurette-heading {
-    margin-top: 120px;
-  }
-}
 
