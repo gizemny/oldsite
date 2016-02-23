@@ -50,6 +50,13 @@ section {
     padding: 100px 0;
 }
 
+.strong {
+  font-weight: 600;
+}
+
+.uppercase {
+  text-transform: uppercase;
+}
 .center {
   text-align: center;
 }
@@ -131,7 +138,7 @@ section {
 }
 
 .jumbotron {
-  background:url(http://moonagecreative.com/gizemist/secret/imgs/contact-thank-you-jpg); 
+  background:url(http://moonagecreative.com/gizemist/secret/imgs/contact-thank-you.jpg); 
   background-size: cover;
   background-repeat: no-repeat;   
   background-position: center top; 
