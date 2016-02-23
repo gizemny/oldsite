@@ -102,7 +102,7 @@ section {
 -------------------------------------------------- */
 #home {
     position: relative;
-    background: url("https://c1.staticflickr.com/1/769/20590944714_b356aa7589_k.jpg") no-repeat fixed center center;
+    background: url(http://moonagecreative.com/gizemist/secret/imgs/home-background.jpg) no-repeat fixed center center;
     /*//c1.staticflickr.com/5/4103/4956564613_8518936eda_b.jpg*/
     background-size: cover;
     height: 100%;
@@ -131,7 +131,7 @@ section {
 }
 
 .jumbotron {
-  background:url(https://unsplash.it/1600/800?image=728); 
+  background:url(http://moonagecreative.com/gizemist/secret/imgs/contact-thank-you-jpg); 
   background-size: cover;
   background-repeat: no-repeat;   
   background-position: center top; 
@@ -295,6 +295,7 @@ section {
 }
 
 .img-overlay h5 {
+    padding-top: 50%;
     color: #000;
     font-size: 14px;
     text-transform: uppercase;
@@ -345,11 +346,11 @@ section {
   text-align: center;
 }
 .portfolio-modal .modal-content h2 {
-  margin-bottom: 15px;
   font-size: 3em;
 }
-.portfolio-modal .modal-content p {
-  margin-bottom: 30px;
+
+.portfolio-modal .modal-content a {
+  color: green;
 }
 .portfolio-modal .modal-content p.item-intro {
   margin: 20px 0 30px;
@@ -437,7 +438,7 @@ section {
 
 /*carousel area css*/
 #review {
-    background: url("//c1.staticflickr.com/5/4120/4928947857_3b0ce0f2ec_b.jpg") no-repeat fixed center center;
+    background: url(http://moonagecreative.com/gizemist/secret/imgs/rust-bg.jpg) no-repeat fixed center center;
     background-size: cover;
     position: relative;
 }
@@ -619,7 +620,7 @@ textarea.form-control {
 }
 
 .tm-social-icon {
-    text-align: left;
+    text-align: center;
 }
 
 .tm-social-icon i {
