@@ -149,6 +149,7 @@ section {
 
 .logo.img-responsive {
   margin: 30px auto;
+  width:60%;
 }
 
 .arrow-down {
@@ -374,7 +375,7 @@ section {
   border: none;
   min-height: 100%;
   padding: 100px 0;
-  text-align: center;
+  /*text-align: center;*/
 }
 .portfolio-modal .modal-content h2 {
   font-size: 3em;
@@ -544,12 +545,12 @@ section {
 
 /* project monitor 
 -------------------------------------------------- */
-img {
+/*img {
   width:500px;
-}
+}*/
 .monitor {
   width: 100%;
-  height: 500px;
+  height: 300px;
   overflow-y:scroll;
   border: solid 1em #333;
   border-radius:.5em;
