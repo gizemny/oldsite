@@ -108,10 +108,10 @@ section {
 
 /* Home 
 -------------------------------------------------- */
-#home {
+/*#home {
     position: relative;
-    background: url(http://moonagecreative.com/gizemist/secret/imgs/cracked-banner.jpg) no-repeat fixed center center;
-    /*//c1.staticflickr.com/5/4103/4956564613_8518936eda_b.jpg*/
+    background: url(imgs/gizem-designer-fullstack-developer-banner1.jpg) no-repeat fixed center center;
+    //c1.staticflickr.com/5/4103/4956564613_8518936eda_b.jpg
     background-size: cover;
     height: 100%;
     width: 100%;
@@ -121,7 +121,7 @@ section {
     display: table;
     z-index:-2;
 }
-
+*/
 .table {
     display: table-cell;
     vertical-align: middle;
@@ -139,7 +139,7 @@ section {
 }
 
 .jumbotron {
-  background:url(http://moonagecreative.com/gizemist/secret/imgs/contact-thank-you.jpg); 
+  background:url(/imgs/gizem-designer-fullstack-developer-banner1.jpg); 
   background-size: cover;
   background-repeat: no-repeat;   
   background-position: center top; 
