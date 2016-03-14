@@ -108,34 +108,11 @@ section {
 
 /* Home 
 -------------------------------------------------- */
-/*#home {
-    position: relative;
-    background: url(imgs/gizem-designer-fullstack-developer-banner1.jpg) no-repeat fixed center center;
-    //c1.staticflickr.com/5/4103/4956564613_8518936eda_b.jpg
-    background-size: cover;
-    height: 100%;
-    width: 100%;
-    color: #333;
-    letter-spacing: 2px;
-    text-transform: uppercase;
-    display: table;
-    z-index:-2;
-}
-*/
+
 .table {
     display: table-cell;
     vertical-align: middle;
     z-index: 10;
-}
-
-.home-overlay {
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background: rgba(85, 85, 85, 0.5);
-    z-index:-1;
 }
 
 .jumbotron {
@@ -148,8 +125,9 @@ section {
 }
 
 .logo.img-responsive {
-  margin: 30px auto;
+  margin: 100px auto 0 auto;
   width:60%;
+  z-index: 10;
 }
 
 .arrow-down {
@@ -182,7 +160,7 @@ section {
     font-size: 23px;
     font-weight: normal;
     letter-spacing: 2px;
-    padding-bottom: 10px;
+    padding-bottom: 30px;
 }
 
 .heading-text p {
@@ -193,7 +171,7 @@ section {
 
 .intro-section {
     height: auto;
-    padding: 60px 0 100px 0;
+    padding: 60px 0 60px 0;
     text-align: center;
     background: #eee;
 }
