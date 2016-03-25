@@ -322,6 +322,13 @@ section {
     overflow: hidden;
 }
 
+.inline { 
+  display:block;
+}
+.inline li {
+  display:inline-block;
+  padding:0 10px;
+}
 
 /* Portfolio
 -------------------------------------------------- */
@@ -538,19 +545,49 @@ section {
   width: 100%;
   height: 300px;
   overflow-y:scroll;
-  border: solid 1em #333;
-  border-radius:.5em;
+/*  border: solid 1em #333;
+  border-radius:.5em;*/
 }
 .monitor::-webkit-scrollbar {
-      width: 15px;
+      width: 10px;
 }
 .monitor::-webkit-scrollbar-thumb {
   background: #666;
+  border-radius:.5em;
 }
 ::-webkit-scrollbar-track {
-      background-color: #888;
+      background-color: #ebebeb;
 }
 
+.monitor-bar {
+  width: 100%;
+  height: 30px;
+  background: linear-gradient(to bottom, #ddd 0%, #c7c7c7 100%);
+  border-radius: 5px 5px 0 0;
+  border-bottom: 1px solid #c7c7c7;
+  border-top: 1px solid #e4e4e4;
+  position: relative;
+}
+.monitor-bar:after,
+.monitor-bar:before {
+  content: '';
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background: #ebebeb;
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  -moz-transform: translateY(-50%);
+  display: block;
+}
+.monitor-bar:before {
+  left: 15px;
+  box-shadow: 15px 0 0 0 #ebebeb;
+}
+.monitor-bar:after {
+  left: 45px;
+}
 /*contact 
 -------------------------------------------------- */
 
@@ -600,6 +637,24 @@ textarea.form-control {
     background: #272b2f;
 }
 
+.btn-pjt {
+    padding: 11px 22px;
+    text-align: center;
+    border: 1px solid #272b2f;
+    background: transparent;
+    text-transform: uppercase;
+    border-radius: 5px;
+    font-size: 11px;
+    transition: all 0.5s;
+    color: #272b2f;
+    letter-spacing: 2px;
+}
+
+.btn-pjt:hover {
+    color: #fff;
+    background: #272b2f;
+}
+
 /*address 
 -------------------------------------------------- */
 .contact-info {
@@ -616,10 +671,11 @@ textarea.form-control {
     margin-bottom: 6px;
 }
 
-.hotline P {
+.hotline p {
     letter-spacing: 1px;
-    font-size: 11px;
+    font-size: 14px;
     margin: 5px;
+    text-align: justify;
 }
 
 .hotline i {
