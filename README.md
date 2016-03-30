@@ -4,6 +4,8 @@ Personal portfolio site, built with bootstrap. With school and work occupying mu
 * Blog integration with jekyll
 * More projects
 * Laravel/Backbone Apps
+
+_Completed_
 * ~~Style + content updates~~
 * ~~JavaScript apps I have built~~ 
 
