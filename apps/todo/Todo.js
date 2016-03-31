@@ -7,6 +7,7 @@ $(document).ready(function() {
 	 	$('#todo-list').append(
 	 		'<li class="list-item">' +entry+ '</li>'
 	 	);
+	 	var item = $('#todo').val('');
 	});
 
 	$('#todo-list').on('mouseenter','> li', function(event) {
