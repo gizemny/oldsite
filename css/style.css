@@ -988,10 +988,7 @@ footer p {
   margin-top: 60px;
   margin-top: 6rem;
 }
-.mb120 {
-  margin-bottom: 120px;
-  margin-bottom: 12rem;
-}
+
 .mr0 {
   margin-right: 0px;
   margin-right: 0rem;
@@ -1057,7 +1054,18 @@ footer p {
   margin-bottom: 60px;
   margin-bottom: 6rem;
 }
-
+.mb80 {
+  margin-bottom: 80px;
+  margin-bottom: 8rem;
+}
+.mb100 {
+  margin-bottom: 100px;
+  margin-bottom: 10rem;
+}
+.mb120 {
+  margin-bottom: 120px;
+  margin-bottom: 12rem;
+}
 .ml0 {
   margin-left: 0px;
   margin-left: 0rem;
