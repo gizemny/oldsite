@@ -37,7 +37,6 @@ h6 {
 }
 
 a {
-    /*display: inline-block;*/
     text-decoration: none;
     color: #2f7bbd;
 }
@@ -835,7 +834,7 @@ footer p {
 }
 
 .footer, .push {
-  height: 65px;  .push must be the same height as .footer 
+  height: 66px;  
 }
 
 .pink {
@@ -904,6 +903,12 @@ footer p {
 
 /* Mediaqueries
 -------------------------------------------------- */
+@media (max-width: 664px) {
+  .footer, .push {
+  height: 82px;  
+  }
+}
+
 @media (min-width: 768px) {
     .navbar {
         padding: 10px 0;
@@ -922,6 +927,7 @@ footer p {
     .top-nav-collapse {
         padding: 0;
     }
+
 }
 @media (min-width: 992px) {
 
