@@ -266,15 +266,6 @@ section {
     line-height: 24px;
 }
 
-.description-text a {
-    -moz-transition: 0.3s;
-    -o-transition: 0.3s;
-    -webkit-transition: 0.3s;
-    transition: 0.3s;
-    color: #333;
-    text-decoration: none
-}
-
 .about-bottom > h4 {
     font-size: 16px;
     font-weight: normal;
@@ -905,7 +896,10 @@ footer p {
 -------------------------------------------------- */
 @media (max-width: 664px) {
   .footer, .push {
-  height: 82px;  
+    height: 82px;  
+  }
+  .description-text {
+    text-align: left;
   }
 }
 
