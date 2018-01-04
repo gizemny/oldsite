@@ -32,7 +32,7 @@ h4,
 h5,
 h6 {
     margin: 0 0 15px;
-    font-weight: 600;
+    font-weight: 300;
     letter-spacing: 1px;
 }
 
@@ -210,7 +210,7 @@ section {
 
 .heading-text h3 {
     font-size: 23px;
-    font-weight: normal;
+    /*font-weight: normal;*/
     letter-spacing: 2px;
     padding-bottom: 30px;
 }
@@ -268,7 +268,7 @@ section {
 
 .about-bottom > h4 {
     font-size: 16px;
-    font-weight: normal;
+    /*font-weight: normal;*/
     padding-bottom: 25px;
 }
 
@@ -410,14 +410,10 @@ section {
   border: none;
   min-height: 100%;
   padding: 100px 0;
-  /*text-align: center;*/
-}
-.portfolio-modal .modal-content h2 {
-  font-size: 3em;
 }
 
-.portfolio-modal .modal-content a {
-  color: green;
+.portfolio-modal .modal-content .modal-body p {
+  margin-bottom: 40px;
 }
 .portfolio-modal .modal-content p.item-intro {
   margin: 20px 0 30px;
