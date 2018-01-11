@@ -9,15 +9,15 @@ body {
     /*font-family: 'Lato', sans-serif;*/
     font-weight: 400;
     font-size: 100%;
-    line-height: 1.5em;
+    line-height: 1.5;
     font-family: "Open Sans", "open-sans", sans-serif;
     -webkit-font-smoothing: antialiased;
     color: #333;
 }
 
 p {
-    font-size: 15px;
-    line-height: 1.5;
+    font-size: 16px;
+    /*line-height: 1.5;*/
 }
 
 img {
@@ -25,14 +25,14 @@ img {
     height: auto;
 }
 
-h3,
+h1,
 h2,
 h3,
 h4,
 h5,
 h6 {
     margin: 0 0 15px;
-    font-weight: 300;
+    font-weight: 500;
     letter-spacing: 1px;
 }
 
@@ -416,6 +416,9 @@ section {
   margin-bottom: 40px;
 }*/
 
+.portfolio-modal .modal-content h4 {
+  margin-top: 40px;
+}
 .portfolio-modal .modal-content p.item-intro {
   margin: 20px 0 30px;
   font-style: italic;
@@ -425,9 +428,10 @@ section {
   margin-bottom: 30px;
   margin-top: 0;
 }
-.portfolio-modal .modal-content img {
+/*.portfolio-modal .modal-content img {
   margin-bottom: 30px;
-}
+}*/
+
 .portfolio-modal .close-modal {
   position: absolute;
   width: 45px;
@@ -533,20 +537,20 @@ section {
 }    
 
 /*carousel area css*/
-#review {
+/*#review {
     background: url(/imgs/gizem-designer-fullstack-developer-testimonials.jpg) no-repeat fixed center center;
     background-size: cover;
     position: relative;
-}
+}*/
 
-.carousel-overlay {
+/*.carousel-overlay {
     position: absolute;
     top: 0;
     left: 0;
     right: 0;
     bottom: 0;
     background-color: rgba(256, 256, 256, 0.80);
-}
+}*/
 
 .carousel-1 {
     color: #272b2f;
