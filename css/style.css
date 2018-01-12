@@ -500,6 +500,42 @@ section {
   text-align: center;
 }
 
+/* Image slider with pure CSS */
+
+.image-slider {
+  position:relative;
+  display: inline-block;
+  line-height: 0;
+}
+
+.image-slider > div {
+  position: absolute;
+  top: 0; bottom: 0; left: 0;
+  width: 20px;
+  max-width: 100%;
+  overflow: hidden;
+  resize: horizontal;
+}
+
+/* Cross-browser resizer styling */
+.image-slider > div:before {
+  content: '';
+  position: absolute;
+  right: 0px; bottom: 0;
+  width: 25px; height: 25px;
+  padding: 5px;
+  background: linear-gradient(-45deg, white 50%, transparent 0);
+  background-clip: content-box;
+  cursor: ew-resize;
+  -webkit-filter: drop-shadow(0 0 2px black);
+  filter: drop-shadow(0 0 2px black);
+}
+
+.image-slider img {
+  user-select: none;
+  max-width: 400px;
+}
+
 /* Img Hover
 -------------------------------------------------- */
 .clear-L-R {   
