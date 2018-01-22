@@ -500,6 +500,85 @@ section {
   text-align: center;
 }
 
+/*Slider take 2*/
+/*.slider-type {
+  height:100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}*/
+img.beforeImage, img.afterImage {
+    max-width: 500px;
+    height: 600px;
+}
+}
+
+.beforeAfter {
+   display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  align-items: center;
+  justify-content: center;position: relative;
+}
+
+.afterContainer {
+  position: absolute;
+  top: 0;
+  left: auto;
+  width: 50%;
+  overflow: hidden;
+  border-right: 1px solid white;
+}
+
+.sliderContainer {
+  position: absolute;
+  width: calc( 100% + 30px);
+  height: 100%;
+  top: 0;
+  left: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#slider {
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+
+/*  Removing Base overides -> https://css-tricks.com/styling-cross-browser-compatible-range-inputs-css/ */
+input[type=range] {
+  -webkit-appearance: none;
+  width: 100%;
+  background: transparent;
+}
+input[type=range]::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  height: 30px;
+  width: 30px;
+  border-radius: 30px;
+  background: #ff3365;
+  cursor: pointer;
+  margin-top: 0;
+  -webkit-box-shadow: 1px 1px 1px #000000, 0px 0px 1px #0d0d0d;
+          box-shadow: 1px 1px 1px #000000, 0px 0px 1px #0d0d0d;
+}
+input[type=range]:focus {
+  outline: none;
+}
+input[type=range]:focus::-webkit-slider-thumb {
+  border: 1px solid blue;
+}
+
 /* Image slider with pure CSS */
 
 .image-slider {

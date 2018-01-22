@@ -371,7 +371,7 @@
                         <div class="col-lg-12">
                           <p>Launch is never the end. After the launch, we revisited old designs and explored new features and components. In order to get as much feedback as possible, we had lots of meetings, interviews and usability tests with various stakeholders. I organized much of this feedback into categories that and iterated designs to explore solutions. We also researched feedback loops which would allow us to interact directly with select participants. From here, we worked on a new visual direction and forward-looking features.</p>
                           <h4>Lessons Learned</h4>
-                          <p>In the beginning of the project, collaborating on design with a mostly remote dev team was challenging. Starting a book club, and implementing Lean UX activities like design studios helped create a favorable design culture. Less is more except for when it comes to communication. More documentation and presentations meant that teams had more visibility and accountability. On the other hand, removing a lot of our collaborative products and switching to Adobe XD & Creative Cloud made asset maintenance more efficient.</p>
+                          <p>In the beginning of the project, collaborating on design with a mostly remote dev team was challenging. Starting a book club, and implementing Lean UX activities like design studios helped create a favorable design culture. Less is more except for when it comes to communication; More documentation and presentations meant that teams had more visibility and accountability. On the other hand, removing a lot of our collaborative products and switching to Adobe XD & Creative Cloud made asset maintenance more efficient.</p>
                         </div>
                       </div>
                   
@@ -451,15 +451,30 @@
                             <p>Based on feedback, we reworked the "bidding bar" to keep all bidding and interactions in a consolidated area. In addition, we removed some duplicate components. Due to our new time constraint, we also removed filtering from the initial launch. 
                             </p>
                           </div>
+
                           <div class="row">
-                            <div class="col-xs-8 col-xs-offset-2 text-center mb20 mt20">
-                              <div class="image-slider">
+                            <div class="col-xs-8 col-xs-offset-2 mb20 mt20">
+                              <div class="slider-type">
+                                <div class="beforeAfter">
+                                  <div class="beforeContainer">
+                                    <img src="imgs/andrew-harper-auctions/auction-landing-detail-before2.png" class="beforeImage" />
+                                  </div>
+                                  <div class="afterContainer">
+                                    <img src="imgs/andrew-harper-auctions/auction-landing-detail-after2.png"  class="afterImage" />
+                                  </div>
+                                  <div class="sliderContainer">
+                                    <input type="range" id="slider">
+                                  </div>
+                                </div>
+                              </div>
+
+                              <!-- <div class="image-slider">
                                 <div>
                                   <img src="imgs/andrew-harper-auctions/auction-landing-detail-before.jpg" />
                                 </div>
                                 <img src="imgs/andrew-harper-auctions/auction-landing-detail-after.jpg" />
-                              </div>
-                              <p><em>Screenshot of the final platform. Use the slider triangle on the bottom left corner of image to view before and after shots of the platform. <a href="https://www.andrewharper.com/auctions" target="_blank">View Live</a></em></p>
+                              </div> -->
+                              <p class="text-center"><em>Screenshot of the final platform. Use the slider to view before and after shots of the platform. <a href="https://www.andrewharper.com/auctions" target="_blank">View Live</a></em></p>
                             </div>
                           </div>
                           <div class="col-xs-12">
@@ -543,13 +558,9 @@
                         </div>
                       </div>
                       <div class="row mt20 mb20 text-center">
-                        <div class="col-xs-6">
+                        <div class="col-xs-12">
                           <img src="imgs/anaconda-inc/wf-landing-pages.png" alt="Landing Pages">
                           <p class="mt10"><em>Landing pages for top tier navigation</em></p>
-                        </div>
-                        <div class="col-xs-6">
-                          <img src="imgs/anaconda-inc/wf-other-pages.png" alt="Product Landing, Details and Download Pages">
-                          <p class="mt10"><em>Product, Community and Resources pages</em></p>
                         </div>
                       </div>
                       <div class="row">
@@ -558,15 +569,10 @@
                           <p>I chose the bolder brand color to convey trust, security and stability which are part of the major themes we discovered through sales customer profile. After several rounds of, feedback and iterations, we received the marketing team’s approval. Using the slider on the image below, you can see how much space can be saved by properly arranging content. </p>
                         </div>
                       </div> 
-                      <div class="row mb20 mt20">
-                        <div class="text-center">
-                          <div class="image-slider">
-                            <div>
-                              <img src="imgs/anaconda-inc/home-before.jpg" />
-                            </div>
-                            <img src="imgs/anaconda-inc/home-after.jpg" />
-                          </div>
-                          <p><em>Use the slider triangle on the bottom left corner of image to view before and after.</em></p>
+                      <div class="row">
+                        <div class="col-xs-12 mt20 mb20 text-center">
+                          <img src="imgs/anaconda-inc/wf-other-pages.png" alt="Product Landing, Details and Download Pages">
+                          <p class="mt20"><em>Product, Community and Resources pages</em></p>
                         </div>
                       </div>
                       <div class="row">
@@ -598,6 +604,19 @@
   ga('send', 'pageview');
 
 </script>
+<script type="text/javascript">
+  const updateAfterContainer = () => {
+    const afterContainer = document.getElementsByClassName('afterContainer')[0];
+    afterContainer.value = 50;
+    return e => afterContainer.style.width = `${e.target.value}%`;
+};
+
+const slider = document.getElementById('slider');
+
+slider.addEventListener('input', updateAfterContainer());
+
+</script>
+<!-- <script src="js/slider.js"></script> -->
 <script src="js/jquery.js"></script>
 <script src="js/bootstrap.min.js"></script>
 <script src="js/jquery.easing.min.js"></script>
