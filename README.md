@@ -1,5 +1,11 @@
 # gizemny.github.io
+Personal portfolio site, built with bootstrap. With school and work occupying much of my time, I have not had as much time to work on this as much as I would have liked. Therefore, next phase will include:
 
-Heyo! Site updated for 2018. Took a minimal approach and added some case studies. 
-Will the next version of the site be a total redo? Maybe leave behind Bootstrap? Move to flexbox or css grid? Or try wordpress? What are your thoughts? 
+* New projects
+* Laravel/Backbone Apps
+
+_Completed_
+* ~~Blog integration with jekyll~~
+* ~~Style + content updates~~
+* ~~JavaScript apps I have built~~ 
 

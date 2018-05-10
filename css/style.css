@@ -6,18 +6,11 @@ body {
 }
 
 body {
-    /*font-family: 'Lato', sans-serif;*/
-    font-weight: 400;
-    font-size: 100%;
-    line-height: 1.5;
-    font-family: "Open Sans", "open-sans", sans-serif;
-    -webkit-font-smoothing: antialiased;
-    color: #333;
+    font-family: 'Lato', sans-serif;
 }
 
-p {
-    font-size: 16px;
-    /*line-height: 1.5;*/
+a:focus {
+    outline: 0 solid
 }
 
 img {
@@ -25,50 +18,36 @@ img {
     height: auto;
 }
 
-h1,
+h3,
 h2,
 h3,
 h4,
 h5,
 h6 {
     margin: 0 0 15px;
-    font-weight: 500;
-    letter-spacing: 1px;
+    font-weight: normal;
+    color: #333333;
+    letter-spacing: 2px;
 }
 
 a {
-    text-decoration: none;
-    color: #2f7bbd;
-}
-
-a:focus, a:hover {
-    outline: 0 solid;
-    color: #f36;
     -moz-transition: 0.3s;
     -o-transition: 0.3s;
     -webkit-transition: 0.3s;
     transition: 0.3s;
-    text-decoration: none;
+    color: #333;
+}
+
+p {
+    font-size: 15px;
+}
+
+a:hover {
+    text-decoration: none
 }
 
 section {
-    padding: 60px 0;
-}
-
-.company-role {
-  color: #262b34;
-}
-
-.dropcap {
-    float: left;
-    font-family: "brandon-grotesque", sans-serif;
-    font-size: 119.2px;
-    line-height: 90px;
-    font-weight: 400;
-    color: #fc3768;
-    padding-right: 10px;
-    margin-top: 10px;
-    margin-bottom: -1px;
+    padding: 100px 0;
 }
 
 .strong {
@@ -82,13 +61,9 @@ section {
   text-align: center;
 }
 
-.navbar-default {
-    background-color: #fff;
-    border-color: #e7e7e7;
-}
 
 .navbar-nav > li > a {
-    padding: 7px 0 ;
+    padding: 7px 0 0;
     line-height: 12px;
     text-transform: uppercase;
     color: #333;
@@ -101,7 +76,7 @@ section {
 .navbar-brand > img {
     display: block;
     max-width:150px; 
-    margin-top: -16px; 
+    margin-top: -18px; 
 }
 
 .nav > li {
@@ -114,7 +89,7 @@ section {
 }
 
 .navbar-nav > li.active a {
-    border-bottom: 1px solid #ff3365;
+    border-bottom: 1px solid #333;
     background-color: none;
 }
 
@@ -140,45 +115,19 @@ section {
     z-index: 10;
 }
 
-/* vertical-centered text */
-.text-vcenter {
-    display: table-cell;
-    text-align: center;
-    vertical-align: middle;
-}
-
-.text-vcenter h1 {
-    font-size: 4.5em;
-    font-weight: 700;
-    margin: 0;
-    padding: 0;
-}
-
-/* additional sections */
-
 .jumbotron {
-  /*background-color: #262b34; */
-  background:url(/imgs/gizem-designer-fullstack-developer-banner.jpg) no-repeat center center fixed; 
+  background:url(/imgs/gizem-designer-fullstack-developer-banner.jpg); 
+  background-size: cover;
+  background-repeat: no-repeat;   
+  background-position: center top; 
   height: 100%;
   width: 100%;
 }
-
-/*.jumbotron h3{
-  color:#fff;
-}
-.jumbotron h5{
-  color:#fff;
-}*/
 
 .logo.img-responsive {
   margin: 100px auto 0 auto;
   width:60%;
   z-index: 10;
-}
-
-.fa-angle-down{
-  /*color: #fff;*/
-  font-size: 3rem;
 }
 
 .arrow-down {
@@ -204,13 +153,12 @@ section {
     100% { opacity: 1; bottom: 35px; }
 }
 
-
 /* Sections
 -------------------------------------------------- */
 
 .heading-text h3 {
     font-size: 23px;
-    /*font-weight: normal;*/
+    font-weight: normal;
     letter-spacing: 2px;
     padding-bottom: 30px;
 }
@@ -261,14 +209,19 @@ section {
 }
 
 /*about area css*/
+#about {
+    color: #272b2f;
+
+}
 
 .description-text p {
     line-height: 24px;
+
 }
 
 .about-bottom > h4 {
     font-size: 16px;
-    /*font-weight: normal;*/
+    font-weight: normal;
     padding-bottom: 25px;
 }
 
@@ -379,9 +332,6 @@ section {
 
 /* Portfolio
 -------------------------------------------------- */
-#portfolio {
-  background: #f8f8f8;
-}
 .project-name {
     padding-bottom: 55px;
     color: #272b2f;
@@ -410,14 +360,14 @@ section {
   border: none;
   min-height: 100%;
   padding: 100px 0;
+  /*text-align: center;*/
 }
-/*
-.portfolio-modal .modal-content .modal-body p {
-  margin-bottom: 40px;
-}*/
+.portfolio-modal .modal-content h2 {
+  font-size: 3em;
+}
 
-.portfolio-modal .modal-content h4 {
-  margin-top: 40px;
+.portfolio-modal .modal-content a {
+  color: green;
 }
 .portfolio-modal .modal-content p.item-intro {
   margin: 20px 0 30px;
@@ -428,10 +378,9 @@ section {
   margin-bottom: 30px;
   margin-top: 0;
 }
-/*.portfolio-modal .modal-content img {
+.portfolio-modal .modal-content img {
   margin-bottom: 30px;
-}*/
-
+}
 .portfolio-modal .close-modal {
   position: absolute;
   width: 45px;
@@ -476,145 +425,6 @@ section {
 }
 
 
-.shadowed {
-    -webkit-filter: drop-shadow(0px 6px 6px rgba(0,0,0,0.3));
-    filter: url(#drop-shadow);
-    -ms-filter: "progid:DXImageTransform.Microsoft.Dropshadow(OffX=0, OffY=6, Color='#444')";
-    filter: "progid:DXImageTransform.Microsoft.Dropshadow(OffX=0, OffY=6, Color='#444')";
-}
-
-.work-header {
-  color: #ff3365;
-  text-transform: uppercase;
-  letter-spacing: 1px;
-}
-.work-sub {
-  font-family: "brandon-grotesque", sans-serif;
-  font-size: 10px;
-  letter-spacing: .1em;
-  color: #7e8890;
-  text-transform: uppercase;
-  font-weight: 700;
-  margin-bottom: 15px;
-  margin-top: 44px;
-  text-align: center;
-}
-
-/*Slider take 2*/
-/*.slider-type {
-  height:100%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}*/
-img.beforeImage, img.afterImage {
-    max-width: 500px;
-    height: 600px;
-}
-}
-
-.beforeAfter {
-   display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  align-items: center;
-  justify-content: center;position: relative;
-}
-
-.afterContainer {
-  position: absolute;
-  top: 0;
-  left: auto;
-  width: 50%;
-  overflow: hidden;
-  border-right: 1px solid white;
-}
-
-.sliderContainer {
-  position: absolute;
-  width: calc( 100% + 30px);
-  height: 100%;
-  top: 0;
-  left: 0;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-
-#slider {
-  width: 100%;
-  height: 100%;
-  position: relative;
-}
-
-/*  Removing Base overides -> https://css-tricks.com/styling-cross-browser-compatible-range-inputs-css/ */
-input[type=range] {
-  -webkit-appearance: none;
-  width: 100%;
-  background: transparent;
-}
-input[type=range]::-webkit-slider-thumb {
-  -webkit-appearance: none;
-  height: 30px;
-  width: 30px;
-  border-radius: 30px;
-  background: #ff3365;
-  cursor: pointer;
-  margin-top: 0;
-  -webkit-box-shadow: 1px 1px 1px #000000, 0px 0px 1px #0d0d0d;
-          box-shadow: 1px 1px 1px #000000, 0px 0px 1px #0d0d0d;
-}
-input[type=range]:focus {
-  outline: none;
-}
-input[type=range]:focus::-webkit-slider-thumb {
-  border: 1px solid blue;
-}
-
-/* Image slider with pure CSS */
-
-.image-slider {
-  position:relative;
-  display: inline-block;
-  line-height: 0;
-}
-
-.image-slider > div {
-  position: absolute;
-  top: 0; bottom: 0; left: 0;
-  width: 20px;
-  max-width: 100%;
-  overflow: hidden;
-  resize: horizontal;
-}
-
-/* Cross-browser resizer styling */
-.image-slider > div:before {
-  content: '';
-  position: absolute;
-  right: 0px; bottom: 0;
-  width: 25px; height: 25px;
-  padding: 5px;
-  background: linear-gradient(-45deg, white 50%, transparent 0);
-  background-clip: content-box;
-  cursor: ew-resize;
-  -webkit-filter: drop-shadow(0 0 2px black);
-  filter: drop-shadow(0 0 2px black);
-}
-
-.image-slider img {
-  user-select: none;
-  max-width: 400px;
-}
-
 /* Img Hover
 -------------------------------------------------- */
 .clear-L-R {   
@@ -652,20 +462,20 @@ input[type=range]:focus::-webkit-slider-thumb {
 }    
 
 /*carousel area css*/
-/*#review {
+#review {
     background: url(/imgs/gizem-designer-fullstack-developer-testimonials.jpg) no-repeat fixed center center;
     background-size: cover;
     position: relative;
-}*/
+}
 
-/*.carousel-overlay {
+.carousel-overlay {
     position: absolute;
     top: 0;
     left: 0;
     right: 0;
     bottom: 0;
     background-color: rgba(256, 256, 256, 0.80);
-}*/
+}
 
 .carousel-1 {
     color: #272b2f;
@@ -816,16 +626,15 @@ textarea.form-control {
     background: transparent;
     text-transform: uppercase;
     border-radius: 0;
-    border-color: #ff3365;
     font-size: 11px;
     transition: all 0.5s;
-    color: #ff3365;
+    color: #272b2f;
     letter-spacing: 2px;
 }
 
 .btn-dark:hover {
     color: #fff;
-    background: #fc3768;
+    background: #272b2f;
 }
 
 .btn-pjt {
@@ -911,13 +720,12 @@ textarea.form-control {
 
 .tm-social-icon i {
     text-align: center;
-    height: 50px;
-    width: 50px;
+    height: 30px;
+    width: 30px;
     border: 1px solid #A2A2A2;
     border-radius: 50%;
     margin-right: 7px;
-    line-height: 50px;
-    font-size: 2em;
+    line-height: 30px;
     color: #A2A2A2;
     transition: all 0.5s;
 }
@@ -925,28 +733,27 @@ textarea.form-control {
 .tm-social-icon i:hover {
     color: #FFFFFF;
     background: #272B2F;
-    border: none;
 }
 
 /*footer css*/
 footer {
-    background: #262b34;
+    background: #F5FCFC;
 }
 
 footer p {
     font-size: 11px;
     letter-spacing: 2px;
-    color: #fff;
+    color: #282828;
     text-transform: uppercase;
     padding: 25px 0 15px;
 }
 
 .footer, .push {
-  height: 66px;  
+  height: 65px;  .push must be the same height as .footer 
 }
 
-.pink {
-    color: #f36;
+.pink{
+    color:pink;
 }
 
 /* PULSE */
@@ -1011,15 +818,6 @@ footer p {
 
 /* Mediaqueries
 -------------------------------------------------- */
-@media (max-width: 664px) {
-  .footer, .push {
-    height: 82px;  
-  }
-  .description-text {
-    text-align: left;
-  }
-}
-
 @media (min-width: 768px) {
     .navbar {
         padding: 10px 0;
@@ -1038,12 +836,10 @@ footer p {
     .top-nav-collapse {
         padding: 0;
     }
-
 }
 @media (min-width: 992px) {
 
 }
-
 
 /* Margin + Padding Classes
 -------------------------------------------------- */
@@ -1171,18 +967,7 @@ footer p {
   margin-bottom: 60px;
   margin-bottom: 6rem;
 }
-.mb80 {
-  margin-bottom: 80px;
-  margin-bottom: 8rem;
-}
-.mb100 {
-  margin-bottom: 100px;
-  margin-bottom: 10rem;
-}
-.mb120 {
-  margin-bottom: 120px;
-  margin-bottom: 12rem;
-}
+
 .ml0 {
   margin-left: 0px;
   margin-left: 0rem;
